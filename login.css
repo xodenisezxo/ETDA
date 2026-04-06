@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #1e1e1e;
+  min-height: 100vh;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-modal {
+  width: 100%;
+  max-width: 420px;
+  background: #5f6661;
+  color: white;
+  border-radius: 20px;
+  padding: 32px 24px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 56px;
+  margin-bottom: 14px;
+}
+
+.login-modal h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  font-size: 16px;
+  color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.thaiid-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  text-decoration: none;
+  background: #33cfff;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+  margin-bottom: 30px;
+  transition: 0.25s;
+}
+
+.thaiid-btn:hover {
+  background: #1eb8e8;
+}
+
+.thaiid-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+#terms {
+  font-size: 13px;
+}
