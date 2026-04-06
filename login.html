@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-PortFam</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="login-modal">
+
+      <div class="icon"></div>
+      <h1>login</h1>
+      <p class="sub-text">Welcome back to PortFam</p>
+
+      <a href="/thaiid-login" class="thaiid-btn">
+        <img src="picture-thaID.webp" alt="ThaiID Logo" class="thaiid-logo">
+        <span>Continue with ThaiID</span>
+      </a>
+
+      <p id="terms">
+        เมื่อกดเข้าสู่ระบบ ท่านยอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัวของระบบ
+      </p>
+    </div>
+  </div>
+
+
+</body>
+</html>
