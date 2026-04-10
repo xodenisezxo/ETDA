@@ -1,32 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login-PortFam</title>
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortFam - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
-  <div class="overlay">
-    <div class="login-modal">
-
-      <div class="icon"></div>
-      <h1>login</h1>
-      <p class="sub-text">Welcome back to PortFam</p>
-
-      <a href="/thaiid-login" class="thaiid-btn">
-        <img src="picture-thaID.webp" alt="ThaiID Logo" class="thaiid-logo">
-        <span>Continue with ThaiID</span>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="Homepage.html" class="brand">
+        <div class="brand-logo">PF</div>
+        <div class="brand-text">PortFam</div>
       </a>
 
-      <p id="terms">
-        เมื่อกดเข้าสู่ระบบ ท่านยอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัวของระบบ
-      </p>
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="mobileMenu">
+        <a href="Homepage.html#home">หน้าแรก</a>
+        <a href="Homepage.html#about">เกี่ยวกับเรา</a>
+        <a href="Homepage.html#services">บริการ</a>
+        <a href="Homepage.html#news">ข่าวสาร</a>
+        <a href="Homepage.html#contact">ติดต่อ</a>
+        <a href="demo.html">Demo-login</a>
+        <a href="index.html">Login</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
+  <main class="login-page">
+    <section class="login-section">
+      <div class="container login-layout">
+        <div class="login-intro">
+          <span class="hero-tag">Secure Access</span>
+          <h1>เข้าสู่ระบบเพื่อใช้งาน PortFam</h1>
+          <p>
+            ระบบต้นแบบสำหรับผู้ใช้ที่ต้องการเข้าถึงบริการดิจิทัลอย่างเป็นระเบียบ
+            ดูน่าเชื่อถือ ใช้งานง่าย และรองรับทั้งมือถือกับคอม
+          </p>
 
-</body>
-</html>
+          <div class="info-pills">
+            <div class="info-pill">
+              <strong>Responsive</strong>
+              <span>รองรับทุกหน้าจอ</span>
+            </div>
+            <div class="info-pill">
+              <strong>Homepage</strong>
+              <span>Login แล้วไปหน้า Home</span>
+            </div>
+            <div class="info-pill">
+              <strong>Demo Flow</strong>
+              <span>มีหน้า demo แยกให้ทดลอง</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="login-card">
+          <div class="card-head">
+            <h2>Login</h2>
+            <p>เข้าสู่ระบบเพื่อไปยังหน้า Homepage</p>
+          </div>
+
+          <form id="loginForm" class="login-form">
+            <label>
+              <span>อีเมล</span>
+              <input type="email" id="email" placeholder="demo@portfam.com" required />
+            </label>
+
+            <label>
+              <span>รหัสผ่าน</span>
+              <input type="password" id="password" placeholder="123456" required />
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">Login</button>
+            <button type="button" class="btn btn-secondary full-width" id="demoLoginBtn">Demo Login</button>
+          </form>
+
+          <p class="login-hint">ตัวอย่าง: demo@portfam.com / 123456</p>
+        </div>
+      </div>
+    </section>
+  </main>
