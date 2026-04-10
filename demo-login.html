@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortFam - Demo Flow</title>
+  <link rel="stylesheet" href="login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">PF</div>
+        <div class="brand-text">PortFam</div>
+      </a>
+
+      <!-- ขีด 3 ขีด -->
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- เมนู -->
+      <nav class="menu" id="mobileMenu">
+        <a href="index.html#home">หน้าแรก</a>
+        <a href="index.html#about">เกี่ยวกับเรา</a>
+        <a href="index.html#services">บริการ</a>
+        <a href="index.html#news">ข่าวสาร</a>
+        <a href="index.html#contact">ติดต่อ</a>
+        <a href="demo.html">Demo-login</a>
+        <a href="index.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- หน้าเดโม่ -->
+  <main class="app-section demo-page">
+    <div class="container app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <div class="user-box">
+            <div class="avatar">S</div>
+            <div>
+              <h3 id="sidebarUserName">Somchai</h3>
+              <p>Young Investor Account</p>
+            </div>
+          </div>
+
+          <div class="progress-wrap">
+            <div class="progress-text">
+              <span>ความคืบหน้า</span>
+              <strong id="progressText">Step 1 of 6</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <div class="step-list">
+            <div class="step-item active" data-step="1">1. ยืนยันตัวตน</div>
+            <div class="step-item" data-step="2">2. รับ Identity VC</div>
+            <div class="step-item" data-step="3">3. ข้อมูลผู้ใช้</div>
+            <div class="step-item" data-step="4">4. เลือกแอปลงทุน</div>
+            <div class="step-item" data-step="5">5. ขอความยินยอม</div>
+            <div class="step-item" data-step="6">6. เสร็จสิ้น</div>
+          </div>
+
+          <div class="sidebar-actions">
+            <button class="btn btn-secondary" id="resetBtn" type="button">เริ่มใหม่</button>
+            <button class="btn btn-primary" id="autoDemoBtn" type="button">Auto Demo</button>
+            <a class="btn btn-secondary full-width text-center" href="Homepage.html">กลับหน้า Home</a>
+          </div>
+        </div>
+      </aside>
+
+      <section class="content-panel">
+        <div class="step-page" id="step1">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag">Step 1</span>
+              <h2 class="thaiid-title"> 
+                <img src="picture-thaID.webp" alt="ThaiID Logo" class="ThaiId-logo">
+                <span>ยืนยันตัวตนด้วย ThaiID</span>
+              </h2>
+              <p>เริ่มต้นด้วยการตรวจสอบข้อมูลผู้ใช้ก่อนเข้าใช้งานระบบ</p>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-card">
+                <small>เลขบัตรประชาชน</small>
+                <strong>1 2345 67890 12 3</strong>
+              </div>
+              <div class="info-card">
+                <small>ชื่อ - นามสกุล</small>
+                <strong>เด็กชาย สมชาย ใจดี</strong>
+              </div>
+              <div class="info-card">
+                <small>วันเกิด</small>
+                <strong>15 มิ.ย. 2553</strong>
+              </div>
+              <div class="info-card">
+                <small>อายุ</small>
+                <strong>14 ปี</strong>
+              </div>
+            </div>
+
+            <div class="action-row">
+              <button class="btn btn-primary" id="verifyBtn">ยืนยันด้วย PIN</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-page hidden" id="step2">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag success-tag">Step 2</span>
+              <h2>ได้รับ Identity VC แล้ว</h2>
+              <p>ระบบออก Verifiable Credential ให้เรียบร้อย</p>
+            </div>
+
+            <div class="success-panel">
+              <div class="success-icon">✓</div>
+              <div>
+                <h3>Identity VC พร้อมใช้งาน</h3>
+                <p>ออกโดยกรมการปกครอง และใช้สำหรับยืนยันตัวตนในระบบ</p>
+              </div>
+            </div>
+
+            <div class="vc-box">
+              <div class="vc-row">
+                <span>Credential</span>
+                <strong>Identity VC</strong>
+              </div>
+              <div class="vc-row">
+                <span>Issuer</span>
+                <strong>กรมการปกครอง</strong>
+              </div>
+              <div class="vc-row">
+                <span>Status</span>
+                <strong>Verified</strong>
+              </div>
+            </div>
+
+            <div class="action-row">
+              <button class="btn btn-primary" id="toProfileBtn">ดำเนินการต่อ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-page hidden" id="step3">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag">Step 3</span>
+              <h2>บอกเราเกี่ยวกับคุณ</h2>
+              <p>เลือกเป้าหมายและระดับความเสี่ยงเพื่อจับคู่แอปที่เหมาะสม</p>
+            </div>
+
+            <div class="question-block">
+              <h3>เป้าหมายการลงทุน</h3>
+              <label class="option-card" id="goal1">
+                <input type="radio" name="goal" value="short" />
+                <span>เก็บเงินซื้อของที่อยากได้</span>
+              </label>
+              <label class="option-card" id="goal2">
+                <input type="radio" name="goal" value="long" />
+                <span>เรียนรู้การลงทุนระยะยาว</span>
+              </label>
+              <label class="option-card" id="goal3">
+                <input type="radio" name="goal" value="trial" />
+                <span>ทดลองลงทุนจริงด้วยเงินน้อย</span>
+              </label>
+            </div>
+
+            <div class="question-block">
+              <h3>ความเสี่ยงที่รับได้</h3>
+              <label class="option-card" id="risk1">
+                <input type="radio" name="risk" value="low" />
+                <span>ต่ำ — ไม่อยากขาดทุน</span>
+              </label>
+              <label class="option-card" id="risk2">
+                <input type="radio" name="risk" value="medium" />
+                <span>กลาง — รับได้บ้างเพื่อผลตอบแทนดีขึ้น</span>
+              </label>
+            </div>
+
+            <div class="action-row">
+              <button class="btn btn-primary disabled" id="toAppBtn" disabled>ไปขั้นตอนถัดไป</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-page hidden" id="step4">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag">Step 4</span>
+              <h2>เลือกแอปลงทุน</h2>
+              <p>ระบบแสดงเฉพาะแอปที่เหมาะสมและผ่านการตรวจสอบ</p>
+            </div>
+
+            <div class="app-grid">
+              <button class="app-card approved" data-app="StockKids" type="button">
+                <div class="app-card-top">
+                  <h3>StockKids</h3>
+                  <span class="badge ok">SEC ✓</span>
+                </div>
+                <p>ซื้อขายหุ้นจริง เริ่มต้น 100 บาท</p>
+              </button>
+
+              <button class="app-card approved" data-app="FundJunior" type="button">
+                <div class="app-card-top">
+                  <h3>FundJunior</h3>
+                  <span class="badge ok">SEC ✓</span>
+                </div>
+                <p>กองทุนรวม ความเสี่ยงต่ำ</p>
+              </button>
+
+              <button class="app-card blocked" data-app="CryptoYouth" type="button">
+                <div class="app-card-top">
+                  <h3>CryptoYouth</h3>
+                  <span class="badge wait">รอ SEC</span>
+                </div>
+                <p>ยังไม่ได้รับการรับรอง</p>
+              </button>
+            </div>
+
+            <p class="select-note" id="selectedAppText">ยังไม่ได้เลือกแอป</p>
+
+            <div class="action-row">
+              <button class="btn btn-primary disabled" id="toConsentBtn" disabled>ส่งคำขอความยินยอม</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-page hidden" id="step5">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag">Step 5</span>
+              <h2>รอการยินยอมจากผู้ปกครอง</h2>
+              <p>ระบบส่ง Consent Request ไปยัง Parent Wallet แล้ว</p>
+            </div>
+
+            <div class="waiting-panel" id="waitingPanel">
+              <div class="spinner"></div>
+              <h3>กำลังรอการอนุมัติ...</h3>
+              <p>โปรดรอขณะผู้ปกครองตรวจสอบคำขอ</p>
+            </div>
+
+            <div class="approval-panel hidden" id="approvalPanel">
+" id="approvalPanel">
+              <div class="success-icon large">✓</div>
+              <h3>ผู้ปกครองยินยอมแล้ว</h3>
+              <p>ระบบได้รับ VP Reference เรียบร้อย</p>
+
+              <div class="vc-box">
+                <div class="vc-row">
+                  <span>VP Reference</span>
+                  <strong>#VP-2024-8821</strong>
+                </div>
+                <div class="vc-row">
+                  <span>Status</span>
+                  <strong>Approved</strong>
+                </div>
+                <div class="vc-row">
+                  <span>แชร์ข้อมูล</span>
+                  <strong>Consent Only</strong>
+                </div>
+              </div>
+
+              <div class="action-row">
+                <button class="btn btn-primary" id="finishBtn">เข้าสู่หน้าใช้งาน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-page hidden" id="step6">
+          <div class="page-card">
+            <div class="page-top">
+              <span class="page-tag success-tag">Step 6</span>
+              <h2>พร้อมใช้งานแล้ว</h2>
+              <p>บัญชีได้รับการยืนยันและสามารถเริ่มต้นใช้งานแอปที่เลือกได้</p>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="dashboard-top">
+                <div>
+                  <small>บัญชีผู้ใช้</small>
+                  <h3>สมชาย ใจดี</h3>
+                </div>
+                <span class="badge ok">ACTIVE</span>
+              </div>
+
+              <div class="dashboard-list">
+                <div class="dashboard-item">
+                  <span>Identity VC</span>
+                  <strong>Verified</strong>
+                </div>
+                <div class="dashboard-item">
+                  <span>Consent VP</span>
+                  <strong>Approved</strong>
+                </div>
+                <div class="dashboard-item">
+                  <span>Selected App</span>
+                  <strong id="finalSelectedApp">-</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-row">
+              <button class="btn btn-primary" id="restartFlowBtn">เริ่ม flow ใหม่</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
