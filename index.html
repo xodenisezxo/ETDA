@@ -3,23 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home-PortFam</title>
-  <link rel="stylesheet" href="Homepage.css" />
+  <title>PortFam - Homepage</title>
+  <link rel="stylesheet" href="homepage.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">PortFam</div>
+      <a href="Homepage.html" class="brand">
+        <div class="brand-logo">PF</div>
+        <div class="brand-text">PortFam</div>
+      </a>
 
-      <nav class="menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="mobileMenu">
         <a href="#home">หน้าแรก</a>
         <a href="#about">เกี่ยวกับเรา</a>
         <a href="#services">บริการ</a>
         <a href="#news">ข่าวสาร</a>
         <a href="#contact">ติดต่อ</a>
-        <a href="login.html" target="_blank">login</a>
+        <a href="demo-login.html">Demo-login</a>
+        <a href="login.html">Login</a>
       </nav>
     </div>
   </header>
@@ -27,119 +36,113 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-content">
-        <p class="hero-tag">Digital Access for Everyone</p>
-        <h1>เว็บไซต์ที่น่าเชื่อถือ ใช้งานง่าย และเข้าถึงได้ทุกวัย</h1>
+        <p class="hero-tag">Digital Access for Young Investors</p>
+        <h1>เว็บไซต์ที่น่าเชื่อถือ ใช้งานง่าย และเข้าถึงได้ทุกอุปกรณ์</h1>
         <p class="hero-text">
-          ออกแบบให้ผู้ใช้สามารถอ่านได้ง่าย ค้นหาข้อมูลได้สะดวก
-          และได้รับประสบการณ์การใช้งานที่ชัดเจน เป็นมิตร และทันสมัย
+          PortFam คือหน้าเว็บไซต์ต้นแบบสำหรับผู้ใช้งานที่ต้องการเริ่มต้นใช้งานบริการดิจิทัล
+          ด้วยหน้าตาที่อ่านง่าย เป็นระเบียบ และดูน่าเชื่อถือ
         </p>
 
         <div class="hero-buttons">
-          <a href="#services" class="btn btn-primary">ดูบริการ</a>
-          <a href="#about" class="btn btn-secondary">เรียนรู้เพิ่มเติม</a>
+          <a href="demo-login.html" class="btn btn-primary">เริ่ม Demo</a>
+          <a href="index.html" class="btn btn-secondary">ไปหน้า Login</a>
+          <button class="btn btn-secondary" id="logoutBtn" type="button">Logout</button>
         </div>
       </div>
     </section>
 
-    <section class="about section" id="about">
+    <section class="section" id="about">
       <div class="container">
         <h2 class="section-title">แนวคิดของเว็บไซต์</h2>
         <p class="section-desc">
-          เว็บไซต์นี้ถูกออกแบบภายใต้แนวคิด “ชัดเจน น่าเชื่อถือ และเข้าถึงง่าย”
-          เพื่อให้ผู้ใช้งานที่มีอายุมากกว่า 20 ปีรู้สึกใช้งานสะดวก
-          ขณะเดียวกันก็ยังคงมีภาพลักษณ์ที่ทันสมัยพอจะดึงดูดผู้ใช้ที่อายุต่ำกว่า 20 ปี
+          ออกแบบให้ดูสุภาพ ทันสมัย และใช้งานง่าย เพื่อให้ผู้ใช้รู้สึกมั่นใจตั้งแต่ครั้งแรกที่เข้าเว็บไซต์
+          ไม่ว่าจะเปิดจากมือถือหรือคอม
         </p>
 
         <div class="feature-grid">
           <div class="feature-card">
             <h3>อ่านง่าย</h3>
-            <p>ใช้ตัวอักษรชัดเจน ขนาดเหมาะสม และมีระยะห่างที่สบายตา</p>
+            <p>ใช้ตัวอักษรชัดเจน ระยะห่างสบายตา และเนื้อหาจัดเป็นส่วนอย่างชัดเจน</p>
           </div>
 
           <div class="feature-card">
             <h3>ใช้งานง่าย</h3>
-            <p>เมนูไม่ซับซ้อน ปุ่มกดชัดเจน และค้นหาข้อมูลได้สะดวก</p>
+            <p>ปุ่มและเมนูเห็นชัด เข้าใจง่าย ไม่ซับซ้อน เหมาะกับผู้ใช้หลายช่วงวัย</p>
           </div>
 
           <div class="feature-card">
             <h3>น่าเชื่อถือ</h3>
-            <p>ใช้โทนสีสุภาพ เรียบง่าย และจัดวางเนื้อหาอย่างเป็นระเบียบ</p>
+            <p>ใช้โทนสีที่เป็นทางการและเรียบสะอาด เพื่อให้ภาพรวมดูมั่นคงและเชื่อถือได้</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services section light-bg" id="services">
+    <section class="section light-bg" id="services">
       <div class="container">
         <h2 class="section-title">บริการของเรา</h2>
         <div class="card-grid">
           <div class="info-card">
-            <h3>ข้อมูลดิจิทัล</h3>
-            <p>รวมข้อมูลที่จำเป็นเกี่ยวกับการใช้งานเทคโนโลยีและบริการออนไลน์</p>
+            <h3>ข้อมูลการใช้งาน</h3>
+            <p>รวบรวมข้อมูลที่จำเป็นสำหรับผู้ใช้ใหม่ให้เข้าใจง่ายในหน้าเดียว</p>
           </div>
 
           <div class="info-card">
-            <h3>คู่มือการใช้งาน</h3>
-            <p>อธิบายขั้นตอนต่าง ๆ อย่างกระชับ ชัดเจน และเข้าใจได้ง่าย</p>
+            <h3>คู่มือเบื้องต้น</h3>
+            <p>อธิบายขั้นตอนสำคัญแบบกระชับ ชัดเจน และไม่ซับซ้อน</p>
           </div>
 
           <div class="info-card">
-            <h3>ข่าวสารและอัปเดต</h3>
-            <p>ติดตามข้อมูลใหม่ ๆ ที่สำคัญได้ในรูปแบบที่อ่านง่ายและเป็นระเบียบ</p>
+            <h3>อัปเดตข่าวสาร</h3>
+            <p>ติดตามประกาศหรือข้อมูลใหม่ ๆ ได้อย่างเป็นระเบียบและรวดเร็ว</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="news section" id="news">
+    <section class="section" id="news">
       <div class="container">
         <h2 class="section-title">ข่าวสารที่น่าสนใจ</h2>
 
         <div class="news-list">
           <article class="news-item">
-            <h3>การออกแบบเว็บไซต์ให้เข้าถึงได้สำหรับทุกคน</h3>
-            <p>
-              เรียนรู้หลักการออกแบบที่ช่วยให้เว็บไซต์อ่านง่าย ใช้งานสะดวก
-              และรองรับผู้ใช้หลายช่วงวัย
-            </p>
+            <h3>แนวทางการออกแบบเว็บให้ใช้งานได้ง่าย</h3>
+            <p>เว็บไซต์ที่ดีควรชัดเจน อ่านง่าย และมีปุ่มที่ผู้ใช้เข้าใจได้ทันที</p>
             <a href="#">อ่านเพิ่มเติม</a>
           </article>
 
           <article class="news-item">
-            <h3>แนวทางพัฒนาเว็บไซต์ที่ดูน่าเชื่อถือ</h3>
-            <p>
-              ทำความเข้าใจเรื่องสี ฟอนต์ และการจัดวางองค์ประกอบ
-              ที่ช่วยสร้างภาพลักษณ์แบบมืออาชีพ
-            </p>
-            <a href="#">อ่านเพิ่มเติม</a>
-          </article>
-
-          <article class="news-item">
-            <h3>ประสบการณ์ผู้ใช้ที่ดีเริ่มจากความเรียบง่าย</h3>
-            <p>
-              โครงสร้างที่ชัดเจนและเนื้อหาที่ตรงประเด็น
-              คือหัวใจสำคัญของเว็บไซต์ที่ดี
-            </p>
+            <h3>ทำไม Responsive Design ถึงสำคัญ</h3>
+            <p>เพราะผู้ใช้เปิดเว็บไซต์จากหลายอุปกรณ์ การออกแบบที่ยืดหยุ่นจึงสำคัญมาก</p>
             <a href="#">อ่านเพิ่มเติม</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta section" id="contact">
-      <div class="container cta-box">
-        <h2>พร้อมเริ่มต้นใช้งานเว็บไซต์ที่เข้าถึงได้มากขึ้นหรือยัง</h2>
-        <p>ติดต่อเราเพื่อรับข้อมูลเพิ่มเติมและพัฒนาแนวทางเว็บไซต์ที่เหมาะสมกับผู้ใช้ทุกกลุ่ม</p>
-        <a href="#" class="btn btn-primary">ติดต่อเรา</a>
+    <section class="section light-bg" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <h2>พร้อมเริ่มใช้งานหรือยัง</h2>
+          <p>
+            เข้าสู่ระบบเพื่อทดลองใช้งาน หรือเข้าไปดูหน้า Demo flow
+            เพื่อดูตัวอย่างการทำงานของระบบ
+          </p>
+          <div class="hero-buttons">
+            <a href="index.html" class="btn btn-primary">ไปหน้า Login</a>
+            <a href="demo.html" class="btn btn-secondary">ดู Demo</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© 2026 ETDA Web Design. All rights reserved.</p>
+      <p>© 2026 PortFam Demo Website</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
