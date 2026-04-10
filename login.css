@@ -95,43 +95,33 @@ input {
 
 /* hamburger */
 .menu-toggle {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
   width: 50px;
   height: 50px;
   border: none;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   cursor: pointer;
-  padding: 10px;
-  position: relative;
+  padding: 0;
   z-index: 1100;
+  flex-shrink: 0;
 }
 
 .menu-toggle span {
-  position: absolute;
-  left: 11px;
-  width: 28px;
+  display: block;
+  width: 26px;
   height: 3px;
   background: #ffffff;
   border-radius: 999px;
-  transition: transform 0.28s ease, opacity 0.22s ease, top 0.28s ease;
-}
-
-.menu-toggle span:nth-child(1) {
-  top: 15px;
-}
-
-.menu-toggle span:nth-child(2) {
-  top: 23px;
-}
-
-.menu-toggle span:nth-child(3) {
-  top: 31px;
+  transition: transform 0.28s ease, opacity 0.22s ease;
 }
 
 .menu-toggle.active span:nth-child(1) {
-  top: 23px;
-  transform: rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -139,8 +129,7 @@ input {
 }
 
 .menu-toggle.active span:nth-child(3) {
-  top: 23px;
-  transform: rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* menu always hidden by default */
