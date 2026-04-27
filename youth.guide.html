@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortFam - สำหรับเยาวชน</title>
+  <link rel="stylesheet" href="youth-guide.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">PF</div>
+        <div class="brand-text">PortFam</div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="mobileMenu">
+        <a href="index.html">หน้าแรก</a>
+        <a href="recom.html">คำแนะนำ</a>
+        <a href="youth-guide.html" class="active-link">สำหรับเยาวชน</a>
+        <a href="parent-guide.html">สำหรับผู้ปกครอง</a>
+        <a href="demo-login.html" class="demo-cta">ดู Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section guide-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>คำแนะนำสำหรับเยาวชน</h2>
+        <p>ใช้งาน PortFam อย่างมั่นใจ ปลอดภัย และเข้าใจสิทธิของตนเองก่อนเริ่มใช้บริการ</p>
+      </div>
+
+      <div class="info-grid four">
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">menu_book</span>
+          </div>
+          <h3>อ่านข้อมูลก่อนกดยอมรับ</h3>
+          <p>ควรอ่านรายละเอียดของระบบทุกครั้ง ว่าระบบเก็บข้อมูลอะไร และนำไปใช้เพื่ออะไร</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">warning</span>
+          </div>
+          <h3>อย่ารีบกดยินยอม</h3>
+          <p>ถ้ายังไม่เข้าใจข้อความหรือเงื่อนไข ควรถามผู้ปกครองหรือครูก่อนกดตกลง</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">lock</span>
+          </div>
+          <h3>ปกป้องข้อมูลส่วนตัว</h3>
+          <p>ไม่ควรเปิดเผยข้อมูลสำคัญ เช่น รหัสผ่าน เลขประจำตัว หรือข้อมูลส่วนบุคคลกับผู้อื่น</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">school</span>
+          </div>
+          <h3>เรียนรู้สิทธิของตนเอง</h3>
+          <p>เยาวชนควรรู้ว่าตนเองมีสิทธิรับรู้ข้อมูล ขอคำอธิบาย และสอบถามได้ก่อนใช้งานจริง</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="youth-guide.js"></script>
+</body>
+</html>
