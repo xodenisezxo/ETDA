@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortFam - สำหรับผู้ปกครอง</title>
+  <link rel="stylesheet" href="parent-guide.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">PF</div>
+        <div class="brand-text">PortFam</div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="mobileMenu">
+        <a href="index.html">หน้าแรก</a>
+        <a href="recom.html">คำแนะนำ</a>
+        <a href="youth-guide.html">สำหรับเยาวชน</a>
+        <a href="parent-guide.html" class="active-link">สำหรับผู้ปกครอง</a>
+        <a href="demo-login.html" class="demo-cta">ดู Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section guide-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>คำแนะนำสำหรับผู้ปกครอง</h2>
+        <p>ช่วยให้ผู้ปกครองเข้าใจกระบวนการยืนยันตัวตน การยินยอม และการดูแลการใช้งานของบุตรหลานอย่างปลอดภัย</p>
+      </div>
+
+      <div class="info-grid four">
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">description</span>
+          </div>
+          <h3>อ่านรายละเอียดก่อนยินยอม</h3>
+          <p>ควรตรวจสอบว่าแพลตฟอร์มขอข้อมูลอะไร ใช้ข้อมูลอย่างไร และมีเหตุผลอะไรในการเก็บข้อมูล</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">badge</span>
+          </div>
+          <h3>เข้าใจกระบวนการ ThaiD</h3>
+          <p>การยืนยันตัวตนผ่าน ThaiD ช่วยเพิ่มความน่าเชื่อถือและลดความเสี่ยงจากการสวมสิทธิ์</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">verified_user</span>
+          </div>
+          <h3>ให้ Consent อย่างมีข้อมูล</h3>
+          <p>การยินยอมควรเกิดจากความเข้าใจ ไม่ใช่การกดยอมรับโดยยังไม่ได้อ่านเงื่อนไขอย่างครบถ้วน</p>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">family_restroom</span>
+          </div>
+          <h3>ติดตามการใช้งานของเยาวชน</h3>
+          <p>ผู้ปกครองควรช่วยดูแล แนะนำ และพูดคุยกับเยาวชนเกี่ยวกับการใช้บริการดิจิทัลอย่างเหมาะสม</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="parent-guide.js"></script>
+</body>
+</html>
