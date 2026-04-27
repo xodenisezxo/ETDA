@@ -3,135 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PortFam - Homepage</title>
-  <link rel="stylesheet" href="homepage.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>PortFam</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="กลับขึ้นด้านบน">↑</button>
+
   <header class="site-header">
     <div class="container nav">
-      <a href="homepage.html" class="brand">
+      <a href="index.html" class="brand">
         <div class="brand-logo">PF</div>
         <div class="brand-text">PortFam</div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <nav class="menu" id="mobileMenu">
-        <a href="#home">หน้าแรก</a>
-        <a href="#about">เกี่ยวกับเรา</a>
-        <a href="#services">บริการ</a>
-        <a href="#news">ข่าวสาร</a>
+        <a href="#home" class="active-link">หน้าแรก</a>
+        <a href="#problem">ปัญหา</a>
+        <a href="#solution">วิธีแก้</a>
+        <a href="#security">ความปลอดภัย</a>
+        <a href="recom.html">คำแนะนำ</a>
         <a href="#contact">ติดต่อ</a>
-        <a href="demo-login.html">Demo-login</a>
-        <a href="login.html">Login</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-content">
-        <p class="hero-tag">Digital Access for Young Investors</p>
-        <h1>เว็บไซต์ที่น่าเชื่อถือ ใช้งานง่าย และเข้าถึงได้ทุกอุปกรณ์</h1>
-        <p class="hero-text">
-          PortFam คือหน้าเว็บไซต์ต้นแบบสำหรับผู้ใช้งานที่ต้องการเริ่มต้นใช้งานบริการดิจิทัล
-          ด้วยหน้าตาที่อ่านง่าย เป็นระเบียบ และดูน่าเชื่อถือ
-        </p>
+    <section class="hero section" id="home">
+      <div class="container hero-layout">
+        <div class="hero-left reveal">
+          <span class="hero-badge">Cyber Safety for Youth</span>
 
-        <div class="hero-buttons">
-          <a href="demo-login.html" class="btn btn-primary">เริ่ม Demo</a>
-          <a href="index.html" class="btn btn-secondary">ไปหน้า Login</a>
-          <button class="btn btn-secondary" id="logoutBtn" type="button">Logout</button>
-        </div>
-      </div>
-    </section>
+          <h1>
+            <span class="hero-portfam">PortFam</span>
+            <span class="hero-platform-line">แพลตฟอร์มตัวกลางที่ช่วยให้</span>
+            เยาวชนเข้าถึงบริการดิจิทัลอย่างปลอดภัย
+          </h1>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title">แนวคิดของเว็บไซต์</h2>
-        <p class="section-desc">
-          ออกแบบให้ดูสุภาพ ทันสมัย และใช้งานง่าย เพื่อให้ผู้ใช้รู้สึกมั่นใจตั้งแต่ครั้งแรกที่เข้าเว็บไซต์
-          ไม่ว่าจะเปิดจากมือถือหรือคอม
-        </p>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>อ่านง่าย</h3>
-            <p>ใช้ตัวอักษรชัดเจน ระยะห่างสบายตา และเนื้อหาจัดเป็นส่วนอย่างชัดเจน</p>
-          </div>
-
-          <div class="feature-card">
-            <h3>ใช้งานง่าย</h3>
-            <p>ปุ่มและเมนูเห็นชัด เข้าใจง่าย ไม่ซับซ้อน เหมาะกับผู้ใช้หลายช่วงวัย</p>
-          </div>
-
-          <div class="feature-card">
-            <h3>น่าเชื่อถือ</h3>
-            <p>ใช้โทนสีที่เป็นทางการและเรียบสะอาด เพื่อให้ภาพรวมดูมั่นคงและเชื่อถือได้</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light-bg" id="services">
-      <div class="container">
-        <h2 class="section-title">บริการของเรา</h2>
-        <div class="card-grid">
-          <div class="info-card">
-            <h3>ข้อมูลการใช้งาน</h3>
-            <p>รวบรวมข้อมูลที่จำเป็นสำหรับผู้ใช้ใหม่ให้เข้าใจง่ายในหน้าเดียว</p>
-          </div>
-
-          <div class="info-card">
-            <h3>คู่มือเบื้องต้น</h3>
-            <p>อธิบายขั้นตอนสำคัญแบบกระชับ ชัดเจน และไม่ซับซ้อน</p>
-          </div>
-
-          <div class="info-card">
-            <h3>อัปเดตข่าวสาร</h3>
-            <p>ติดตามประกาศหรือข้อมูลใหม่ ๆ ได้อย่างเป็นระเบียบและรวดเร็ว</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="news">
-      <div class="container">
-        <h2 class="section-title">ข่าวสารที่น่าสนใจ</h2>
-
-        <div class="news-list">
-          <article class="news-item">
-            <h3>แนวทางการออกแบบเว็บให้ใช้งานได้ง่าย</h3>
-            <p>เว็บไซต์ที่ดีควรชัดเจน อ่านง่าย และมีปุ่มที่ผู้ใช้เข้าใจได้ทันที</p>
-            <a href="#">อ่านเพิ่มเติม</a>
-          </article>
-
-          <article class="news-item">
-            <h3>ทำไม Responsive Design ถึงสำคัญ</h3>
-            <p>เพราะผู้ใช้เปิดเว็บไซต์จากหลายอุปกรณ์ การออกแบบที่ยืดหยุ่นจึงสำคัญมาก</p>
-            <a href="#">อ่านเพิ่มเติม</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light-bg" id="contact">
-      <div class="container">
-        <div class="cta-box">
-          <h2>พร้อมเริ่มใช้งานหรือยัง</h2>
-          <p>
-            เข้าสู่ระบบเพื่อทดลองใช้งาน หรือเข้าไปดูหน้า Demo flow
-            เพื่อดูตัวอย่างการทำงานของระบบ
+          <p class="hero-text">
+            ลดช่องว่างข้อจำกัดด้านอายุ พร้อมสร้างความมั่นใจให้ผู้ปกครอง
+            ด้วยระบบยืนยันตัวตนผ่าน ThaiD และระบบ Consent ที่โปร่งใส
           </p>
-          <div class="hero-buttons">
-            <a href="index.html" class="btn btn-primary">ไปหน้า Login</a>
-            <a href="demo-login.html" class="btn btn-secondary">ดู Demo</a>
+
+          <div class="hero-buttons-custom">
+            <a href="recom.html" class="hero-main-btn hero-main-btn-primary">
+              ดูคำแนะนำ
+            </a>
+            <a href="demo-login.html" class="hero-main-btn hero-main-btn-secondary">
+              ทดลองใช้งาน Demo
+            </a>
           </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="hero-device-wrap">
+            <div class="phone-mock-custom">
+              <div class="phone-notch-custom"></div>
+
+              <div class="phone-screen-custom">
+                <div class="phone-top-custom">
+                  <div class="phone-top-logo-wrap">
+                    <div class="phone-top-logo">PF</div>
+                    <div class="phone-top-text">PortFam</div>
+                  </div>
+                </div>
+
+                <div class="phone-thaid-logo">
+                  <img src="picture-thaID.webp" alt="ThaiD Logo">
+                </div>
+
+                <div class="phone-check-custom">✓</div>
+
+                <h2>ยืนยันตัวตนสำเร็จ</h2>
+                <p class="phone-subtitle-custom">ตรวจสอบตัวตนก่อนเริ่มใช้งาน</p>
+
+                <div class="phone-actions-custom">
+                  <div class="phone-action-item active-action">
+                    <span class="phone-action-icon">👤</span>
+                    <span>ผู้ใช้งานตัวจริง</span>
+                  </div>
+
+                  <div class="phone-action-item">
+                    <span class="phone-action-icon">🛡️</span>
+                    <span>รอการยินยอม</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>ปัญหาที่ PortFam ต้องการแก้</h2>
+          <p>
+            ไม่ใช่แค่อายุไม่ถึง แต่คือความไม่มั่นใจของผู้ปกครองต่อความปลอดภัยของข้อมูล
+          </p>
+        </div>
+
+        <div class="info-grid three">
+          <div class="info-card reveal">
+            <h3>เยาวชนเข้าถึงบริการได้ยาก</h3>
+            <p>หลายบริการต้องการผู้ใช้อายุถึงเกณฑ์ ทำให้เยาวชนเริ่มต้นเรียนรู้ไม่ได้ด้วยตนเอง</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>ผู้ปกครองกังวลเรื่องข้อมูล</h3>
+            <p>แม้อยากช่วย แต่ไม่มั่นใจว่าข้อมูลส่วนบุคคลจะถูกใช้ไปทำอะไร และปลอดภัยจริงหรือไม่</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>ขาดตัวกลางที่สร้างความไว้วางใจ</h3>
+            <p>หลายระบบยังไม่อธิบายเรื่องการยืนยันตัวตน การยินยอม และการใช้ข้อมูลให้เข้าใจง่ายพอ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg" id="solution">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>PortFam แก้ปัญหายังไง</h2>
+          <p>ใช้แนวคิด Verify, Explain, Consent และ Protect เพื่อสร้างความไว้วางใจ</p>
+        </div>
+
+        <div class="info-grid four">
+          <div class="info-card reveal">
+            <h3>Verify</h3>
+            <p>ยืนยันตัวตนด้วย ThaiD ก่อนเริ่มกระบวนการ</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>Explain</h3>
+            <p>อธิบายว่าจะใช้ข้อมูลอะไร ใช้เพื่ออะไร อย่างชัดเจน</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>Consent</h3>
+            <p>ให้ผู้ปกครองรับรู้และยินยอมอย่างเข้าใจ</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>Protect</h3>
+            <p>ใช้ข้อมูลเท่าที่จำเป็นและคำนึงถึงความเป็นส่วนตัว</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="security">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>PortFam ปลอดภัยอย่างไร</h2>
+          <p>
+            PortFam ถูกออกแบบโดยคำนึงถึงความปลอดภัยของเยาวชนและข้อมูลส่วนบุคคลเป็นสำคัญ
+            ทุกขั้นตอนเน้นความชัดเจน ความยินยอม และการใช้ข้อมูลเท่าที่จำเป็น
+          </p>
+        </div>
+
+        <div class="info-grid four">
+          <div class="info-card reveal">
+            <h3>ยืนยันตัวตนด้วย ThaiD</h3>
+            <p>ช่วยลดความเสี่ยงจากการสวมสิทธิ์ และทำให้เริ่มต้นใช้งานจากตัวตนที่น่าเชื่อถือ</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>ใช้ข้อมูลเท่าที่จำเป็น</h3>
+            <p>ระบบจะขอเฉพาะข้อมูลที่จำเป็นต่อการใช้งาน และอธิบายเหตุผลของการใช้ข้อมูลอย่างชัดเจน</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>ผู้ปกครองรับรู้และยินยอม</h3>
+            <p>ผู้ปกครองสามารถรับรู้กระบวนการและตัดสินใจได้อย่างชัดเจน ก่อนให้เยาวชนเข้าถึงบริการ</p>
+          </div>
+
+          <div class="info-card reveal">
+            <h3>โปร่งใสและเข้าใจง่าย</h3>
+            <p>ทุกขั้นตอนถูกออกแบบให้เข้าใจง่าย ตรวจสอบได้ และช่วยให้ครอบครัวใช้งานได้อย่างมั่นใจ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>ติดต่อเรา</h2>
+        </div>
+
+        <div class="contact-card reveal">
+          <p><strong>PortFam</strong></p>
+          <p>Email: support@portfam.example</p>
+          <p>โทร: 02-000-0000</p>
         </div>
       </div>
     </section>
@@ -139,10 +219,10 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© 2026 PortFam Demo Website</p>
+      <p>© <span id="currentYear"></span> PortFam. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
